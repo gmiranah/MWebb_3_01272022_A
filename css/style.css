@@ -24,8 +24,8 @@ body{
   animation-name: inAndOut;
   animation-delay: 3s;
   animation-duration: 1s;
-  /*animation-fill-mode: forward;*/
-  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  
   animation-timing-function: linear;
   display: flex;
   justify-content: center;
@@ -53,10 +53,7 @@ body{
     top: 50%;
     left: 50%;
     
-   /* flex-basis: 50px;
-    height: 50px;
-    margin-top: 60%;
-    align-items: center;*/
+   
     border-top: 7px solid #9356DC;
     border-bottom: 7px solid #FF79DA;
     border-left:7px solid #99E2D0 ;
@@ -64,17 +61,10 @@ body{
        
     border-radius: 50% 50%;
     animation: spin 2s linear;
-   /* z-index: 0px;*/
+   
     
 }
-/*
-.loader::after{
-z-index: 9999px;
-position:absolute;
-top:0;
-left:0;
-animation: ;
-}  */
+
 
  
 @keyframes spin {
@@ -96,62 +86,6 @@ animation: ;
  
   
 
-/*   ORIGINAL CODE NO FLEX---------------------------------------------------------------------
-
-#logo{
-  margin: 3px auto;
-  padding-left: 25%;
-  
-  
-  object-fit: contain;
-}
-.header{
- 
-  margin: 3px auto;
-}
-.location{
-  
-  margin: 3px auto 0px auto;
-  background-color: #E9E9E9;
-  height: 50px;
-  position: relative;
-  
-  
-  
-}
-#maplogo{
-  
-  margin-right: 10px;
-}
-.specific-location{
-  text-align: center;
-  
-  background-color: #E9E9E9;
-  position: absolute;
-  left: 35%;
-  top: 20%;
-  font-family: "shrikhand";
-  
-  
-  
-  
-}
-.restaurant-explore{
-  
-  margin: 0px auto 20px auto;
-  background-color: #F6F6F6;
-  height: 250px;
-
-}
-.book-text{
-  padding-top: 10%;
-  margin-left: 20%;
-  font-family: "shrikhand";
- 
-}
-.parag-book-text{
-  margin-left: 15%;}
-  ---------------------------------------------------ORIGINAL NO FLEX   */
 .header{
   display: flex;
   justify-content: center;
@@ -227,11 +161,7 @@ animation: ;
   
   
 }
-/*
-a{
-  text-decoration: none;
-  color: white;
-}   ----------------------------------------------------------------------------*/
+
 .explore-button:hover{
   opacity: 0.75;
   box-shadow: 0 4px 16px 0 #9356DC;
@@ -325,13 +255,7 @@ color: #9356DC;
 .bt-text{
 font-weight: bold;
 }
-/*
-.steps-link{
-  text-decoration: none;
-  color: black; 
-  align-items: center;
-  margin-left: 10%;
-}*/
+
 .restaurants-pics{
   display: flex;
   flex-direction: column;
@@ -340,41 +264,7 @@ font-weight: bold;
   width: auto;
   justify-content:space-between;
 }
-/* CARD
-.restaurant-card{
-  border-radius: 15px 15px 0px 0px;
-  flex-basis: 20%;
-  max-height: 20%;   
-  border: 2px solid #F2F2F2;
-  
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-color: white;
-  margin-bottom: 30px;
-  
-}
-.info-restaurant-card{
-  
-}
-.rest-name{
- color: pink;
- margin-bottom: 20px;
-}
-.heart-icon{
-  color: pink;
-}
- 
-.restaurant-image{
-  border-radius:15px 15px 0px 0px;
-  
-  width: 100%;
-  max-width:100%;
-  max-height: 75%;
- 
-  
-  object-fit: cover;
-  
 
-}*/
 .restaurant-card{
   border-radius: 15px 15px 0px 0px;
   flex-basis: 20%;
@@ -402,17 +292,7 @@ font-weight: bold;
   
 }
 
-/*.container-image-with-new{
-  position: relative;
-  border-radius:15px 15px 0px 0px;
-  
-  width: 100%;
-  max-width:100%;
-  flex-basis: 75%;
-  max-height: 75%;
- 
-  
-}*/
+
 .New{
   background: #99E2D0;
   
@@ -422,19 +302,7 @@ font-weight: bold;
   left: 80%;
   width: 40px;
 }
-/*.new-york{
-  
-  margin-top: 0%;
-  
-  padding: 0px 0px;
 
-}
-.rest-name{
-  
-  margin-bottom: 0px;
-  font-weight: bold;
-  text-decoration: none;
-} */
 .image-information{
   object-fit: contain;
   
@@ -496,6 +364,7 @@ a{
   animation-name: fill-red;
   animation-duration: 3s;
   animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
 
@@ -545,31 +414,7 @@ a{
 }
 /* media query for tablet */
 @media screen and (min-width: 768px) and (max-width: 991px){
- /* .explore-button{
-      width: 40%;
-  }
-  .how-it-works{
-      display: flex;
-      flex-direction: column;
-      border:3px solid orange;
-  }
-  .how-it-works-steps{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      border: 3px solid red;
-      height: 150px;
-      align-items: center;
-        
-  } 
-  .button-with-number{
-      flex-basis: 30%;
-      height: 50px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-          
-  }---------------------------------------------------------get rid*/
+ 
   .container-explore-button{
      
       flex-basis: 15%;
