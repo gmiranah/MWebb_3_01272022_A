@@ -412,143 +412,7 @@ a{
 .icon-footer-hands{
   padding-right: 10px;
 }
-/* media query for tablet 
-@media screen and (min-width: 768px) and (max-width: 991px){
- 
-  .container-explore-button{
-     
-      flex-basis: 15%;
-      width: 50%;
-      
-  }
-
-.explore-button{
-  width: 90%;
-}
-  
-  
-
-  .how-it-works{
-      display: flex;
-      flex-direction: column;
-      
-  }
-  .how-it-works-steps{
-      display: flex;
-      flex-direction: column;
-        
-      height: 250px;
-      align-items: center;
-      
-  
-  }
-  .button-with-number{
-     
-      flex-basis:  25%;
-      
-    
-      width: 50%;
-
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-     
-      
-  }
-  .buttons-steps{
-     
-  }
-  
-  
- 
-  .restaurants-pics{
-      display: flex;
-      flex-direction: row;
-      height:750px;
-      flex-wrap: wrap;
-      width: auto;
-      justify-content:space-between;
-  }
-  .restaurant-card{
-      flex-basis: 40%;
-      height: 45%;
-      min-height: 45% ;
-      
-  }
-  .restaurants-pics-header{
-      align-self: flex-start;
-      flex-basis: 100%;
-  }
-  .footer-list-title{
-      
-      margin-left: 45%;
-        
-  }
-  .footer-list{
-      align-items: center;
-  }
-  }
-  @media screen and (min-width: 992px) and (max-width: 3000px){
-      .container-explore-button{
-     
-          flex-basis: 15%;
-          width: 30%;
-          
-          
-      }
-  
-  .explore-button{
-      width: 90%;
-  }
-      
-      .how-it-works{
-      display: flex;
-      flex-direction: column;
-      
-  }
-  .how-it-works-steps{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      height: 150px;
-      align-items: center;
-        
-  } 
-  .button-with-number{
-      flex-basis: 30%;
-      height: 50px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-          
-  }
-  .restaurants-pics{
-      display: flex;
-      flex-direction: row;
-      height:750px;
-      flex-wrap: wrap;
-      width: auto;
-      justify-content:space-between;
-  }
-  .restaurant-card{
-      flex-basis: 40%;
-      height: 45%;
-      min-height: 45% ;
-      
-  }
-  .restaurants-pics-header{
-      align-self: flex-start;
-      flex-basis: 100%;
-  }
-  .footer-list-title{
-      
-      margin-left: 45%;
-        
-  }
-  .footer-list{
-      align-items: center;
-  }
-}--------------------------------------------------------------------------------get rid*/
+/*----------------------------------------------------------------------Menu---------------------------------------------------*/
 .menu-header__button-container{
     
   width: 100%;
@@ -698,7 +562,7 @@ box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.2);
 margin: 4% 1%;
 display: flex;
 justify-content: flex-start;
-
+overflow-x: hidden;
 opacity: 0;
 animation-name: appearing-menu;
 animation-delay: 2s;
@@ -717,6 +581,7 @@ box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.2);
 margin: 4% 1%;
 display: flex;
 justify-content: flex-start;
+overflow-x: hidden;
 opacity: 0;
 animation-name: appearing-menu;
 animation-delay: 6s;
@@ -734,6 +599,7 @@ box-shadow: 0 4px 8px 0 rgba(34, 33, 33, 0.2);
 margin: 4% 1%;
 display: flex;
 justify-content: flex-start;
+overflow-x: hidden;
 opacity: 0;
 animation-name: appearing-menu;
 animation-delay: 9s;
@@ -1088,26 +954,51 @@ width: 70%;
  }  
  .entrees__item{
   width: 40%;
-  margin: 2% auto;
+  margin: 0.5% auto;
+  flex-basis: 15%;
+  max-height: 15%;
   
 }
 .main-dish__item{
   width: 40%;
-  margin: 2% auto;
+  margin: 0.5% auto;
+  flex-basis: 15%;
+  max-height: 15%;
+  
 }
 .desserts__item{
   width: 40%;
-  margin: 2% auto
+  margin: 0.5% auto;
+  flex-basis: 15%;
+  max-height: 15%;
+  
 }
  
  
 
 .container-menu-order-button{
-  margin: 4% auto 0% auto;
-  flex-basis: 15%;
+  margin: 7% auto 0% auto;
+  flex-basis: 3%;
+  max-height: 3%;
   width: 40%;
   
 }
+.entrees{
+  
+  display: flex;
+  flex-direction: column;
+  }
+  .main-dish{
+  
+  display: flex;
+  flex-direction: column;
+  }
+  .desserts{
+  
+  display: flex;
+  flex-direction: column;
+  }
+
 .menu-heart-icon{
 position: absolute;
 left: 70%;
