@@ -52,20 +52,16 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    
-   
+     
     border-top: 7px solid #9356DC;
     border-bottom: 7px solid #FF79DA;
     border-left:7px solid #99E2D0 ;
     border-right: 7px solid #99E2D0;
-       
+     
     border-radius: 50% 50%;
     animation: spin 2s linear;
-   
-    
+     
 }
-
-
  
 @keyframes spin {
   0% {
